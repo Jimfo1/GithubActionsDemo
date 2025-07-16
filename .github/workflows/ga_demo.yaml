@@ -4,7 +4,7 @@ run-name: Run of a demo workflow
 
 on: push
 jobs:
-  first job:
+  first-job:
     runs-on: windows-latest
     steps:
       - run: node --version
