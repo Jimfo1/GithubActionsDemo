@@ -2,7 +2,10 @@ name: demo workflow
 
 run-name: Run of a demo workflow
 
-on: push
+on: 
+  push:
+    branches-ignore:
+    - main
 jobs:
   first-job:
     runs-on: windows-latest
