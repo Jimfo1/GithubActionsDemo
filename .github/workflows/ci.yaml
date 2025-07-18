@@ -1,5 +1,5 @@
 name: "Lesson 2 - Exercise 1"
-
+run-name: CI demo run
 on: 
   push:
     branches:
