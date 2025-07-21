@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run test suite
-        if: ${{ state == 'run' }}
+        if: ${{ needs.state.outputs.state == 'run' }}
         run: |
           echo "Running tests..."
           sleep 5 # Simulate running tests
