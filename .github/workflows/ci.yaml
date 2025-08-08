@@ -1,12 +1,13 @@
 name: "Lesson 2 - Exercise 1"
 run-name: CI demo run
 on: 
-  push:
-    branches:
-    - main
-    paths-ignore:
-    - "**.md"
-    - "**/**.md"
+  workflow_dispatch:
+  # push:
+  #  branches:
+  #  - main
+  #  paths-ignore:
+  #  - "**.md"
+  #  - "**/**.md"
 jobs:
   test:
     # The type of runner that the job will run on
