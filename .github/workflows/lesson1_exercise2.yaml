@@ -3,14 +3,15 @@ name: Simple Workflow
 run-name: Run of the simple workflow
 
 on:
-  # Workflow run trigger events
-  push:
-    branches-ignore: 
-    - main
-  pull_request:
-    branches: ["main"]
-  # Manually trigger workflow run
   workflow_dispatch:
+  # Workflow run trigger events
+  # push:
+  #  branches-ignore: 
+  # - main
+  # pull_request:
+  #  branches: ["main"]
+  # Manually trigger workflow run
+  # workflow_dispatch:
 
 jobs:
   # First job
